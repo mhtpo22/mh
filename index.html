@@ -311,6 +311,7 @@
     <div id="contact" class="container">
         <h3 class="text-center">Contact</h3>
         <p class="text-center"><em>We'd like to help.</em></p>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdsgmjHLG6M75OFwc2mMFnAruTbOKIV9C1jfjuuT9UR6EXu3g/formResponse">
         <div class="row">
             <div class="col-md-4">
                 <p>ご質問や演奏依頼などのお問い合わせはこちらからお願いします。</p>
@@ -318,25 +319,26 @@
                 <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com (代表)</p>
             </div>
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="entry.2116052852" placeholder="Name ( 例: 田中 太郎 )" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="entry.1558582620" placeholder="Email ( 例: example@mail.co.jp )" type="email" required>
+                    </div>
                 </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-            <br>
-            <div class="row">
-                <div class="col-md-12 form-group">
-                    <button class="btn pull-right" type="submit">Send</button>
+                <textarea class="form-control" id="comments" name="entry.1618498056" placeholder="Comment" rows="5" required></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
                 </div>
             </div>
         </div>
+        </form>
     </div>
-    <br>
     <!--
     <h3 class="text-center">More</h3>
     
@@ -431,7 +433,22 @@
     <br>
     -->
     <!-- Footer -->
-    </div>
+<script>
+$.ajax({
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSdsgmjHLG6M75OFwc2mMFnAruTbOKIV9C1jfjuuT9UR6EXu3g/formResponse",
+  data: {"entry.2116052852": name},
+  type: "POST",
+  dataType: "xml",
+  statusCode: {
+    0: function() {
+      //Success message
+    },
+    200: function() {
+      //Success Message
+    }
+  }
+})
+</script>
 
     <footer class="text-center">
         <div class="bg-1">
@@ -439,7 +456,7 @@
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
             <br><br>
-            <p>Copyright © 2019 関西学院大学クラシックギタークラブ </p>
+            <p>Copyright © 2019</p><p>関西学院大学クラシックギタークラブ</p>
         </div>
     </footer>
 </body>
