@@ -19,4 +19,20 @@ $(document).ready(function () {
       });
     } // End if
   });
-})z
+})
+
+
+$.ajax({
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSdsgmjHLG6M75OFwc2mMFnAruTbOKIV9C1jfjuuT9UR6EXu3g/formResponse",
+  data: {"entry.2116052852": name},
+  type: "POST",
+  dataType: "xml",
+  statusCode: {
+    0: function() {
+      //Success message
+    },
+    200: function() {
+      //Success Message
+    }
+  }
+})
