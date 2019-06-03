@@ -2,6 +2,8 @@
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
+     overflow: auto;
+  height: 100%;
 }
 
 h3, h4 {
