@@ -16,6 +16,12 @@
     .phone {
       display: none;
     }
+
+.phone {
+    max-width: 100%;
+    height: auto;
+}
+
     @media screen and (max-width: 768px) {
       .carousel {
         display: none;
@@ -24,10 +30,7 @@
         display: block;
       }
     }
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 body {
   font: 400 15px/1.8 Lato, sans-serif;
