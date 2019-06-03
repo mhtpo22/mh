@@ -58,23 +58,32 @@ $.ajax({
     }
 })
 
-const showDialog = () => {
-  document.getElementById("dialog").classList.add("show")
-  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
-  body.style.position = "fixed";
-  body.style.top = "-${scrollY}";
-};
-const closeDialog = () => {
-  const scrollY = body.style.top;
-  body.style.position = "";
-  body.style.top = "";
-  window.scrollTo(0, parseInt(scrollY || "0") * -1);
-  document.getElementById("dialog").classList.remove('show');
-}
-window.addEventListener("scroll", () => {
-  document.documentElement.style.setProperty("--scroll-y", "${window.scrollY}px");
-});
 
+var current_scrollY;
+
+// OPEN MODAL
+$( '.open button' ).on( 'click', function(){
+  current_scrollY = $( window ).scrollTop(); 
+
+  $( '#show' ).css( {
+    position: 'fixed',
+    width: '100%',
+    top: -1 * current_scrollY
+  } );
+
+  $( '#myModal2' ).show();
+
+} );
+
+// CLOSE
+$( '#myModal2' ).on( 'click', function( e ){
+  if ( e.target.tagName.toLowerCase() === 'section' ){
+    $( '#show' ).attr( { style: '' } );
+    $( 'html, body' ).prop( { scrollTop: current_scrollY } );
+
+    $( this ).hide();
+  }
+} );
 
 
 
