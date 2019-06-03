@@ -64,7 +64,6 @@ var current_scrollY;
 // OPEN MODAL
 $( ".btn" ).on( "click", function(){
   current_scrollY = $( window ).scrollTop(); 
-window.addEventListener( "touchmove" , movefun , { passive: false } );
   $( "#show" ).css( {
     position: "fixed",
     width: "100%",
@@ -80,14 +79,9 @@ $( "#myModal2" ).on( "click", function( e ){
   if ( e.target.tagName.toLowerCase() === 'section' ){
     $( "#show" ).attr( { style: "" } );
     $( "html, body" ).prop( { scrollTop: current_scrollY } );
-window.removeEventListener( "touchmove" , movefun, { passive: false } );
     $( this ).hide();
   }
 } );
 
-	
-var movefun = function( event ){
-	event.preventDefault();
-}
 
 
