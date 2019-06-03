@@ -68,13 +68,13 @@ const showDialog = () => {
 const closeDialog = () => {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
-  document.getElementById('dialog').classList.remove('show');
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
+  document.getElementById("dialog").classList.remove('show');
 }
 window.addEventListener('scroll', () => {
-  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  document.documentElement.style.setProperty("--scroll-y", "${window.scrollY}px");
 });
 
 
