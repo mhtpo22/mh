@@ -60,7 +60,7 @@ $.ajax({
 
 const showDialog = () => {
   document.getElementById("dialog").classList.add("show")
-
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   body.style.position = "fixed";
   body.style.top = "-${scrollY}";
 };
@@ -71,7 +71,7 @@ const closeDialog = () => {
   window.scrollTo(0, parseInt(scrollY || "0") * -1);
   document.getElementById("dialog").classList.remove('show');
 }
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   document.documentElement.style.setProperty("--scroll-y", "${window.scrollY}px");
 });
 
