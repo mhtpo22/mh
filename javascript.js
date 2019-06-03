@@ -59,31 +59,19 @@ $.ajax({
 })
 
 
-(document).ready(function($){
-	//body固定関数
-	var bodyElm = $("body");
-	var scrollPosi;
-	function bodyFix() {
-		scrollPosi = $(window).scrollTop();
-		bodyElm.css({
-			"position": "fixed",
-			"width": "100%",
-			"z-index": "1",
-			"top": -scrollPosi
-		});
-	}
-	
-	//body fixリセット
-	function bodyFixReset() {
-		bodyElm.css({
-			"position": "relative",
-			"width": "auto",
-			"top":"auto"
-		});
-		//scroll位置を調整
-		$("html, body").scrollTop(scrollPosi);
-	}
-});
+    var state = false;
+    $(".btn").click(function(){
+      $("#myModal2").toggleClass("open");
+      if (state == false){
+        $(window).on("touchmove.noScroll", function(e) {
+          e.preventDefault();
+        });
+        state = true;
+      } else {
+        $(window).off(".noScroll");
+        state = false;
+      }
+    });
 
 
 
