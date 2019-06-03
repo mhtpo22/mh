@@ -62,7 +62,7 @@ const showDialog = () => {
   document.getElementById("dialog").classList.add("show")
   const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   body.style.position = "fixed";
-  body.style.top = "-${scrollY}";
+
 };
 const closeDialog = () => {
   const scrollY = body.style.top;
