@@ -85,5 +85,16 @@ $( '#myModal2' ).on( 'click', function( e ){
   }
 } );
 
+	
+// 停止、開始でfunction書くのが面倒なので1つにまとめます。
+var movefun = function( event ){
+	event.preventDefault();
+}
+ 
+// スクロール停止の処理
+window.addEventListener( 'touchmove' , movefun , { passive: false } );
+ 
+// スクロール停止することを停止する処理
+window.removeEventListener( 'touchmove' , movefun, { passive: false } );
 
 
