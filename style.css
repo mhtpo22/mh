@@ -127,6 +127,7 @@ h3, h4 {
 
 #myModal2{
     position: fixed;
+    overflow: hidden;
 }
 
 .modal-content {
