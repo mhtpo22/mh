@@ -62,25 +62,25 @@ $.ajax({
 var current_scrollY;
 
 // OPEN MODAL
-$( '.open button' ).on( 'click', function(){
+$( ".btn" ).on( "click", function(){
   current_scrollY = $( window ).scrollTop(); 
-window.addEventListener( 'touchmove' , movefun , { passive: false } );
-  $( '#show' ).css( {
-    position: 'fixed',
-    width: '100%',
+window.addEventListener( "touchmove" , movefun , { passive: false } );
+  $( "#show" ).css( {
+    position: "fixed",
+    width: "100%",
     top: -1 * current_scrollY
   } );
 
-  $( '#myModal2' ).show();
+  $( "#myModal2" ).show();
 
 } );
 
 // CLOSE
-$( '#myModal2' ).on( 'click', function( e ){
+$( "#myModal2" ).on( "click", function( e ){
   if ( e.target.tagName.toLowerCase() === 'section' ){
-    $( '#show' ).attr( { style: '' } );
-    $( 'html, body' ).prop( { scrollTop: current_scrollY } );
-window.removeEventListener( 'touchmove' , movefun, { passive: false } );
+    $( "#show" ).attr( { style: "" } );
+    $( "html, body" ).prop( { scrollTop: current_scrollY } );
+window.removeEventListener( "touchmove" , movefun, { passive: false } );
     $( this ).hide();
   }
 } );
