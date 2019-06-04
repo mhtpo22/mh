@@ -248,12 +248,13 @@ textarea {
   font-size: 20px;/*文字サイズ*/
   border: solid white 2px; /*線で囲う*/
   padding: 7px;/*文字と線の間の余白*/
+  background: rgba(255, 255, 255, 0.4);/*背景を半透明に*/
   color: white;/*文字色*/
   text-decoration: none;/*下線を表示させない*/
   }
 
 .example a:hover{/*カーソルを当てたとき*/
-  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+  background: rgba(255, 255, 255, 0.6);/*背景を半透明に*/
   }
 
 .example img {
