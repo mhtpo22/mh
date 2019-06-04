@@ -1,14 +1,16 @@
 /* ----------------------- 全体 ------------------------------------------- */
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    font: 400 15px/1.8 Hiragino Kaku Gothic ProN, ヒラギノ角ゴ ProN W3;
     color: #777;
-     overflow: auto;
-  height: 100%;
+    letter-spacing: .1em;
+    height: 100%;
+    text-align: justify;
+    line-height:1.4em;
+    font-feature-settings: "palt";
 }
 
 h3, h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;
     font-size: 20px;
     color: #111;
 }
@@ -28,8 +30,12 @@ h3, h4 {
     color: #fff;
 }
 
-.bg-1 p {
+.eng{
     font-style: italic;
+}
+
+.jap{
+    font-style: normal;
 }
 
 /* ----------------------- 円形 ------------------------------------------- */
@@ -192,7 +198,7 @@ h3, h4 {
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
-    letter-spacing: 4px;
+    letter-spacing: 1.3px;
     opacity: 0.9;
 }
 
