@@ -48,7 +48,7 @@ h3, h4 {
 /* ----------------------- スクリーン ---------------------------------- */
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
+    filter: grayscale(10%);
     /* make all photos black and white */
     width: 100%;
     margin: auto;
