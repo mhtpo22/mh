@@ -15,8 +15,7 @@ h3, h4 {
     color: #111;
 }
 .h3, h3{
-    font-size: 30px;  
-    line-height:.1em;
+  font-size: 30px;  
 }
 
 /* ----------------------- 部分 ------------------------------------------- */
@@ -26,7 +25,7 @@ h3, h4 {
 
 /* ----------------------- 背景の設定 ---------------------------------- */
 .bg-1 {
-    background: #4B2D1C;
+    background: #2d2d30;
     color: #bdbdbd;
 }
 
@@ -199,11 +198,11 @@ h3, h4 {
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #461015;
+    background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 1.3px;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .navbar li a, .navbar .navbar-brand {
