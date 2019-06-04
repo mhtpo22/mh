@@ -11,7 +11,7 @@ body {
 }
 
 h3, h4 {
-    margin: 10px 0 40px 0;
+    margin: 0px 0 10px 0;
     font-size: 20px;
     color: #111;
 }
@@ -27,7 +27,7 @@ h3, h4 {
 }
 .sen{
     padding-top:0px;
-    margin: 40px 40px;
+    margin: 30px 20px;
     border-bottom: double 10px black;
 }
 
