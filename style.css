@@ -7,7 +7,6 @@ body {
     text-align: justify;
     line-height:1.4em;
     font-feature-settings: "palt";
-    background: #F6EFDA;
 }
 
 h3, h4 {
@@ -23,18 +22,16 @@ h3, h4 {
 /* ----------------------- 部分 ------------------------------------------- */
 .container {
     padding: 80px 40px;
-    border-bottom: double 10px black;
-    margin: 15px
 }
 
 /* ----------------------- 背景の設定 ---------------------------------- */
 .bg-1 {
-    background: #F6EFDA;
-    color: #111;
+    background: #AB552F;
+    color: #fff;
 }
 
 .bg-1 h3 {
-    color: #111;
+    color: #fff;
 }
 
 .eng{
