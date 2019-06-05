@@ -96,6 +96,7 @@ h3, h4 {
 .example img {
   width: 100%;
   animation: haunted 5s ease forwards;
+}
 
 @keyframes haunted {
     0% {
