@@ -73,11 +73,11 @@ h3, h4 {
 }
 
 /* ----------------------- トップ画面の設定 ------------------------- */
-.example {
+.topscreen-phone {
   position: relative;
   }
 
-.example a {/*aタグを画像の真ん中に*/
+.topscreen-phone a {/*aタグを画像の真ん中に*/
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,11 +94,11 @@ h3, h4 {
   text-decoration: none;/*下線を表示させない*/
   }
 
-.example a:hover{/*カーソルを当てたとき*/
+.topscreen-phone a:hover{/*カーソルを当てたとき*/
   background: rgba(255, 255, 255, 0.6);/*背景を半透明に*/
   }
 
-.example img {
+.topscreen-phone img {
   width: 100%;
   animation: haunted 10s ease forwards;
 }
