@@ -95,10 +95,19 @@ h3, h4 {
 
 .example img {
   width: 100%;
-  }
+  animation: haunted 5s ease forwards;
 
-
-
+@keyframes haunted {
+    0% {
+        filter: brightness(0%);
+    }
+    50% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
 
 .phone {
     display: none;

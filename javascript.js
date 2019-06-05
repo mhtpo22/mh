@@ -72,9 +72,8 @@ $.ajax({
         state = false;
       }
     });
-// ああ
-
-	
+    
+// ロード画面
 $('head').append(
     '<style type="text/css">#contents { display: none; } #fade, #loader { display: block; }</style>'
 );
