@@ -279,15 +279,14 @@ textarea {
 
 /* ----------------------- END ------------------------------------------- */
 #loader {
-    width: 画像の幅px;
-    height: 画像の高さpx;
+    max-width:100%
+    max-height:100%;
     display: none;
     position: fixed;
     _position: absolute; /* IE6対策 */
     top: 50%;
     left: 50%;
-    margin-top: -XXpx; /* heightの半分のマイナス値 */
-    margin-left: -XXXpx; /* widthの半分のマイナス値 */
+    transform: translate(-50%,-50%);
     z-index: 100;
 }
  
