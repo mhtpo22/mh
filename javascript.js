@@ -58,29 +58,28 @@ $.ajax({
     }
 })
 
-
-    var state = false;
-    $(".btn").click(function(){
-      $("#myModal2").toggleClass("open");
-      if (state == false){
+// モーダル画面時にトップ画面を移動させない
+var state = false;
+$(".btn").click(function(){
+    $("#myModal2").toggleClass("open");
+    if (state == false){
         $(window).on("touchmove.noScroll", function(e) {
-          e.preventDefault();
+            e.preventDefault();
         });
         state = true;
-      } else {
+    } else {
         $(window).off(".noScroll");
         state = false;
-      }
-    });
+    }
+});
     
 // ロード画面
 $('head').append(
     '<style type="text/css">#contents { display: none; } #fade, #loader { display: block; }</style>'
 );
  
-jQuery.event.add(window,"load",function() { // 全ての読み込み完了後に呼ばれる関数
+jQuery.event.add(window,"load",function() { 
     var pageH = $("#contents").height();
- 
     $("#fade").css("height", pageH).delay(2000).fadeOut(800);
     $("#loader").delay(600).fadeOut(300);
     $("#contents").css("display", "block");

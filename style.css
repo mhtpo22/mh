@@ -33,6 +33,7 @@ h3, h4 {
     color: #fff;
 }
 
+/* ----------------------- 言語ごとの書式 ---------------------------- */
 .eng{
     font-style: italic;
 }
@@ -67,7 +68,7 @@ h3, h4 {
     color: #fff !important;
 }
 
-/* ----------------------- メディアの設定 ---------------------------- */
+/* ----------------------- トップ画面の設定 ------------------------- */
 .example {
   position: relative;
   }
@@ -98,6 +99,15 @@ h3, h4 {
   animation: haunted 10s ease forwards;
 }
 
+.phone {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+.linkbox {
+        display: none;
+}
+
 @keyframes haunted {
     0% {
         filter: brightness(0%);
@@ -108,15 +118,6 @@ h3, h4 {
     100% {
         filter: brightness(100%);
     }
-}
-
-.phone {
-    display: none;
-    max-width: 100%;
-    height: auto;
-}
-.linkbox {
-        display: none;
 }
 
 @media (max-width: 600px) {
@@ -287,7 +288,7 @@ textarea {
     -ms-user-select: text;
 }
 
-/* ----------------------- END ------------------------------------------- */
+/* ----------------------- ロード画面 ---------------------------------- */
 #loader {
     max-width:100%
     max-height:100%;
@@ -310,3 +311,5 @@ textarea {
     left: 0px;
     z-index: 50;
 }
+
+/* ----------------------- END ------------------------------------------- */
