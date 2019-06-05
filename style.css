@@ -95,14 +95,14 @@ h3, h4 {
 
 .example img {
   width: 100%;
-  animation: haunted 5s ease forwards;
+  animation: haunted 10s ease forwards;
 }
 
 @keyframes haunted {
     0% {
         filter: brightness(0%);
     }
-    50% {
+    30% {
         filter: brightness(0%);
     }
     100% {
