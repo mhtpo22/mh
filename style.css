@@ -9,6 +9,23 @@ body {
     font-feature-settings: "palt";
 }
 
+html {
+	overflow-y:scroll;
+}
+
+p,li,dt,dl {
+	line-height:1.6;
+}
+p {
+	margin:0 0 1em 0;
+}
+li {
+	list-style-type:none;
+}
+ul{
+  list-style:none;   
+}
+
 h3, h4 {
     margin: 10px 0 40px 0;
     font-size: 20px;
@@ -155,8 +172,8 @@ h3, h4 {
 
 .thumbnail {
     padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
+    /*border: none;*/
+    /*border-radius: 0;*/
 }
 
 .thumbnail p {
@@ -235,6 +252,7 @@ h3, h4 {
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
+    
 }
 
 .open .dropdown-toggle {
@@ -317,3 +335,26 @@ textarea {
 }
 
 /* ----------------------- END ------------------------------------------- */
+
+ul.list-sns {
+  width: auto;
+  border:none;
+  padding:0;
+  font-size:0px;
+}
+
+ul.list-sns li {
+  width:60px;
+transform: translate(-15%,0%);
+  display: inline-block;
+  text-align: center;
+  font-size:16px;
+}
+
+ul.list-sns li:first-child {
+  height:60px;
+}
+
+ul.list-sns li a {
+  display: block;
+}

@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 // ナビバーを閉じる：ナビバー以外クリック時
 $(document).on('click touchstart', function(event) {
-    if (!$(event.target).closest('#top-head').length) {
+    if (!$(event.target).closest('.layout-header').length) {
         $(".navbar-collapse").collapse('hide');
     }
 });
@@ -23,7 +23,7 @@ $(document).ready(function () {
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, .sub a ,footer a[href='#myPage']").on('click', function (event) {
+    $(".navbar a, .sub a ,footer a[href='#pagetop']").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -75,13 +75,13 @@ $(".btn").click(function(){
     
 // ロード画面
 $('head').append(
-    '<style type="text/css">#contents { display: none; } #fade, #loader { display: block; }</style>'
+    '<style type="text/css">#pagetop { display: none; } #fade, #loader { display: block; }</style>'
 );
  
 jQuery.event.add(window,"load",function() { 
-    var pageH = $("#contents").height();
+    var pageH = $("#pagetop").height();
     $("#fade").css("height", pageH).delay(2000).fadeOut(800);
     $("#loader").delay(600).fadeOut(300);
-    $("#contents").css("display", "block");
+    $("#pagetop").css("display", "block");
 });
 

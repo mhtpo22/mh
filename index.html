@@ -38,32 +38,34 @@
 <meta name="twitter:site" content="@kwansei_guitar" />
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-- loading -->
-<div id="loader">
-    <img src="https://goo.gl/8XdHq9"></div>
-    <div id="fade"></div>
-</div>
-
-<!-- main -->
-<div id="contents">
-
-        <!-- Header -->
-        <header id="top-head">
+<body class="is-loaded is-show-nav" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="loader" class="layout-loading">
+        <img src="https://goo.gl/8XdHq9"></div>
+        <div id="fade"></div>
+    </div>
+    <div id="pagetop" class="layout-container">
+        <header class="layout-header">
+            <!--  通常、ナビバーがトップに黒色で表示されている。 -->
             <nav class="navbar navbar-default navbar-fixed-top">
+                <!--  流動的に変化をし、狭くなったら「pulldown型」になります。 -->
                 <div class="container-fluid">
+                    <!-- 「pulldown型」になった処理について、 -->
                     <div class="navbar-header">
+                        <!-- ボタンを押すとナビバーが表示されます。 -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <!-- ボタンを作成しています。-->
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#myPage">Classical Guitar Club</a>
+                        <a class="navbar-brand" href="#pagetop">Classical Guitar Club</a>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- ナビバーは表示されます。 -->
+                    <div id="myNavbar" class="collapse navbar-collapse" >
+                        <!-- ナビバーは通常右寄せ、pulldownでは下に並んでいます。 -->
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#myPage">HOME</a></li>
+                            <li><a href="#pagetop">HOME</a></li>
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="#Join">Join The Club</a></li>
                             <li><a href="#member">MEMBER</a></li>
@@ -74,332 +76,345 @@
                 </div>
             </nav>
         </header>
-    
-        <!-- Top screen ( PC ) -->
-        <div class="topscreen-pc">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="image/teien2.jpg" alt="スライド１枚目" width="1200" height="700" oncontextmenu="return false;">
-                        <div class="carousel-caption">
-                            <h3>第５８回定期演奏会</h3>
-                            <p>練習の成果をこの舞台で！</p>
+        <section class="section-hero">
+            <!-- Top screen ( PC ) -->
+            <div class="topscreen-pc">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="image/teien2.jpg" alt="スライド１枚目" width="1200" height="700" oncontextmenu="return false;">
+                            <div class="carousel-caption">
+                                <h3>第５８回定期演奏会</h3>
+                                <p>練習の成果をこの舞台で！</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="image/1200x700.jpg" alt="スライド２枚目" width="1200" height="700" oncontextmenu="return false;">
+                            <div class="carousel-caption">
+                                <h3>合宿</h3>
+                                <p>演奏会のために猛練習！</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="image/1200x700.jpg" alt="スライド３枚目" width="1200" height="700" oncontextmenu="return false;">
+                            <div class="carousel-caption">
+                                <h3>第５６回合同演奏会</h3>
+                                <p>４大学の交流！</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="image/1200x700.jpg" alt="スライド２枚目" width="1200" height="700" oncontextmenu="return false;">
-                        <div class="carousel-caption">
-                            <h3>合宿</h3>
-                            <p>演奏会のために猛練習！</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/1200x700.jpg" alt="スライド３枚目" width="1200" height="700" oncontextmenu="return false;">
-                        <div class="carousel-caption">
-                            <h3>第５６回合同演奏会</h3>
-                            <p>４大学の交流！</p>
-                        </div>
-                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">前へ</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">次へ</span>
+                    </a>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">前へ</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">次へ</span>
-                </a>
             </div>
-        </div>
-        <!-- Top screen ( Phone ) -->
-        <div class="topscreen-phone">
-            <img src="image/teien.jpg" alt="第５６回合同演奏会" class="phone" width="700" height="1200" oncontextmenu="return false;">
-            <a href="https://twitter.com/kwansei_guitar" class="linkbox"><i class="fab fa-twitter fa-inverse"></i> Follow Me</a>	
-        </div>
-                
-        <!-- Container (The About Section) -->
-        <div id="about" class="container text-center bg-0">
-            <h3>About</h3>
-            <p><em>No Guitar No Life!</em></p>
-            <div class="row">
-            <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-3">
-            <p>関西学院大学文化総部クラシックギタークラブは1958年4月に6名のギター愛好家によりクラシックギター同好会として設立されました。そして1965年には念願のクラブ昇格を果たし、現在に至ります。当時はギターブームの波に乗り、部員数も約200人という驚異的な数字に達したこともありました。現在はギター黄金期に比べると人数は確かに少なくなりましたが、その分密度の濃い活動を目標に頑張っています。</p>
+            <!-- Top screen ( SH ) -->
+            <div class="topscreen-phone">
+                <img src="image/teien.jpg" alt="第５６回合同演奏会" class="phone" width="700" height="1200" oncontextmenu="return false;">
+                <a href="https://twitter.com/kwansei_guitar" class="linkbox"><i class="fab fa-twitter fa-inverse"></i> Follow Me</a>	
             </div>
-            </div>
-        </div>
+        </section>
         
-        <!-- Container (The Join Section) -->
-        <div id="Join" class=" text-center bg-1">
-            <div class="container">
-                <h3>Join The Club</h3>
-                <p>クラシックギター部は，一年を通して，一緒に活動する部員を募集しています。</p>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4 col-xs-6">
-                        <img src="image/beginner.svg" class="img-circle person" alt="マーク１" width="255" height="255" oncontextmenu="return false;">
-                        <p class="text-center sukima">初心者歓迎</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
-                        <img src="image/associate.svg" class="img-circle person" alt="マーク２" width="255" height="255" oncontextmenu="return false;">
-                        <p class="text-center sukima">他大学と交流</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 sukima">
-                        <img src="image/practice.svg" class="img-circle person" alt="マーク３" width="255" height="255" oncontextmenu="return false;">
-                        <p class="text-center">週２回の練習</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 sukima">
-                        <img src="image/makki.svg" class="img-circle person" alt="マーク４" width="255" height="255" oncontextmenu="return false;">
-                        <p class="text-center sukima">演奏依頼</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
-                        <img src="image/score.svg" class="img-circle person" alt="マーク５" width="255" height="255" oncontextmenu="return false;">
-                        <p class="text-center sukima">様々な楽譜</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
-                        <div class="sub">
-                            <a href="#contact"><img src="image/FAQ.svg" class="img-circle person check" alt="マーク６" width="255" height="255" oncontextmenu="return false;"></a>
-                            <p class="text-center">質問はこちらへ</p>
+        <main class="layout-content layout-content--home">        
+            <!-- The About Section -->
+            <section id="about" class="text-center bg-0">
+                <div class="container">
+                    <h3>About</h3>
+                    <p><em>No Guitar No Life!</em></p>
+                    <div class="row">
+                        <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-3">
+                            <p>関西学院大学文化総部クラシックギタークラブは1958年4月に6名のギター愛好家によりクラシックギター同好会として設立されました。そして1965年には念願のクラブ昇格を果たし、現在に至ります。当時はギターブームの波に乗り、部員数も約200人という驚異的な数字に達したこともありました。現在はギター黄金期に比べると人数は確かに少なくなりましたが、その分密度の濃い活動を目標に頑張っています。</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Container (The Member Section) -->
-        <div id="member" class="container text-center bg-0">
-            <h3>Member</h3>
-            <div class="container-fluid">
-                <div class="row" align=center>
-                    <p>３回生</p>
-                    <div class="col-md-3 col-sm-4 col-xs-6">みこち（商）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">ブルマ（法）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">あんな（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">ゆうた（法）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">さとし（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">いまい（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">リアス（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">なぎさ（法）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">たろう（法）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">じじん（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">まっき（理）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">たっつ（経）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">うんべ（経）</div>
-                </div>
-            </div>
-            <br>
-            <div class="container-fluid">
-                <div class="row" align=center>
-                <p>４回生</p>
-                    <div class="col-md-3 col-sm-4 col-xs-6">まなち（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">なべり（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">もえち（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">もりち（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">いちろ（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">きっち（商）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">ふねち（社）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">しゅち（社）</div>
-                </div>
-            </div>
-            <br>
-            <div class="container-fluid">
-                <div class="row" align=center>
-                    <p>OB</p>
-                    <div class="col-md-3 col-sm-4 col-xs-6">よしこ（人）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">まるこ（経）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">もとこ（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">よしこ（経）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">よしこ（文）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">よしこ（法）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">よしこ（経）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">なつこ（国）</div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">やすこ（経）</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Container (The Event Section) -->
-        <div id="event" class="text-center bg-1">
-            <div class="container">
-                <h3>Event</h3>
-                <p>開催予定のイベント</p>
-                <p class="eng">Scheduled Events</p>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="thumbnail">
-                            <img src="image/400x300.jpg" alt="イベント１" id="image1" width="4000" height="300">
-                            <p><strong>第59回定期演奏会</strong></p>
-                            <p class="eng">Saturday 30 November 2019</p>
-                            <button class="btn" id="show" onClick="showDialog()" data-toggle="modal" data-target="#myModal2">detail</button>
+            </section>
+            <!-- The Join Section -->
+            <section id="Join" class="text-center bg-1">
+                <div class="container">
+                    <h3>Join The Club</h3>
+                    <p>クラシックギター部は，一年を通して，一緒に活動する部員を募集しています。</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-6">
+                            <img src="image/beginner.svg" class="img-circle person" alt="マーク１" width="255" height="255" oncontextmenu="return false;">
+                            <p class="text-center sukima">初心者歓迎</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <img src="image/associate.svg" class="img-circle person" alt="マーク２" width="255" height="255" oncontextmenu="return false;">
+                            <p class="text-center sukima">他大学と交流</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 sukima">
+                            <img src="image/practice.svg" class="img-circle person" alt="マーク３" width="255" height="255" oncontextmenu="return false;">
+                            <p class="text-center">週２回の練習</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 sukima">
+                            <img src="image/makki.svg" class="img-circle person" alt="マーク４" width="255" height="255" oncontextmenu="return false;">
+                            <p class="text-center sukima">演奏依頼</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <img src="image/score.svg" class="img-circle person" alt="マーク５" width="255" height="255" oncontextmenu="return false;">
+                            <p class="text-center sukima">様々な楽譜</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <div class="sub">
+                                <a href="#contact"><img src="image/FAQ.svg" class="img-circle person check" alt="マーク６" width="255" height="255" oncontextmenu="return false;"></a>
+                                <p class="text-center">質問はこちらへ</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <br>
-                <p>過去のイベント</p>
-                <p class="eng">Past events</p>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="image/400x300.jpg" alt="イベント２" width="4000" height="300">
-                            <p><strong>第56回定期合同演奏会</strong></p>
-                            <p class="eng">Sunday 6 June 2019</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
+            </section>
+            <!-- The Member Section -->
+            <section id="member" class="text-center bg-0">
+                <div class="container">
+                    <h3>Member</h3>
+                    <div class="container-fluid">
+                        <div class="row" align=center>
+                            <p>３回生</p>
+                            <div class="col-md-3 col-sm-4 col-xs-6">みこち（商）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">ブルマ（法）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">あんな（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">ゆうた（法）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">さとし（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">いまい（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">リアス（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">なぎさ（法）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">たろう（法）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">じじん（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">まっき（理）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">たっつ（経）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">うんべ（経）</div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="image/400x300.jpg" alt="イベント３" width="4000" height="300">
-                            <p><strong>新入生歓迎イベント</strong></p>
-                            <p class="eng">Friday 12 April 2019</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
+                    <br>
+                    <div class="container-fluid">
+                        <div class="row" align=center>
+                            <p>４回生</p>
+                            <div class="col-md-3 col-sm-4 col-xs-6">まなち（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">なべり（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">もえち（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">もりち（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">いちろ（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">きっち（商）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">ふねち（社）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">しゅち（社）</div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="image/400x300.jpg" alt="イベント４" width="4000" height="300">
-                            <p><strong>フェアウェル</strong></p>
-                            <p class="eng">Sunday 29 February 2019</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="myModal2" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <button type="button" class="close" data-dismiss="modal">×</button>
-                            <h4>Detail</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="psw"><span class="glyphicon glyphicon-music"></span> 第56回定期合同演奏会</label>
-                                </div>
-                                <div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item text-left"><span class="label label-danger">日　時</span> 2019年11月30日（土）</li>
-                                        <li class="list-group-item text-left"><span class="label label-danger">場　所</span> あましんアルカイックホール・オクト</li>
-                                        <li class="list-group-item text-left"><span class="label label-danger">一　言</span> 今年最後の発表会です。<br>ぜひ、この機会にお越しください。</li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" id="dialog" onClick="closeDialog()" class="btn btn-default btn center-block" data-dismiss="modal">
-                                <span class="glyphicon glyphicon-remove"></span>Go Back
-                            </button>
+                    <br>
+                    <div class="container-fluid">
+                        <div class="row" align=center>
+                            <p>OB</p>
+                            <div class="col-md-3 col-sm-4 col-xs-6">よしこ（人）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">まるこ（経）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">もとこ（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">よしこ（経）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">よしこ（文）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">よしこ（法）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">よしこ（経）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">なつこ（国）</div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">やすこ（経）</div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <button type="button" class="close" data-dismiss="modal">×</button>
-                            <h4>Detail</h4>
+            </section>
+            <!-- The Event Section -->
+            <section id="event" class="text-center bg-1">
+                <div class="container">
+                    <h3>Event</h3>
+                    <p>開催予定のイベント</p>
+                    <p class="eng">Scheduled Events</p>
+                    <div class="row">
+                        <div class="archive-event col-md-6 col-md-offset-3">
+                            <div class="thumbnail">
+                                <img src="image/400x300.jpg" alt="イベント１" id="image1" width="4000" height="300">
+                                <p><strong>第59回定期演奏会</strong></p>
+                                <p class="eng">Sat 30 Nov. 2019</p>
+                                <button class="btn" id="show" onClick="showDialog()" data-toggle="modal" data-target="#myModal2">detail</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="psw"><span class="glyphicon glyphicon-music"></span> 第56回定期合同演奏会</label>
-                                </div>
-                                <div class="text-left">
-                                    <p>2019年6月16日（日）に関西学生ギター連盟主催の合同演奏会が川西みつなかホールで行われました。 二回生の多くは他大学にゲストとして、三回生は他大学の二回生を受け入れるホストとして、 春から練習を頑張ってきました。</p>
-                                    <br>
-                                    <p><strong>第 Ⅰ 部</strong></p>
-                                    <p>The POP ENSEMBLE</p>
-                                    <ul><li>RPG ／ SEKAI NO OWARI</li></ul>
-                                    <p>阪関四重奏</p>
-                                    <ul><li>情熱大陸 ／ 葉加瀬太郎</li></ul>
-                                    <p>首脳会談（四重奏）</p>
-                                    <ul><li>『HARUMI』Along the Edge ／ Andrew York</li></ul>
-                                    <br>
-                                    <p><strong>第 Ⅱ 部</strong></p>
-                                    <p>実家るてっと</p>
-                                    <ul><li>Tunis Tunisie ／ Roland Dyens</li></ul>
-                                    <p>KC ENSEMBLE</p>
-                                    <ul><li>365日の紙飛行機 ／ AKB48</li></ul>
-                                    <p>関神大合奏</p>
-                                    <ul><li>美しき青きドナウ／ ヨハン・シュトラウスⅡ</li></ul>
-                                    <br>
-                                    <p><strong>第 Ⅲ 部</strong></p>
-                                    <p>三重奏</p>
-                                    <ul><li>La Boda de Luis Alonso -Intermedio- ／Jeronimo Gimenez</li></ul>
-                                    <p>THE TANGO ENSEMBLE</p>
-                                    <ul><li>夜明け／ Robert Firpo</li></ul>
-                                    <p>関大大合奏</p>
-                                    <ul><li>交響曲第40番第一楽章 ／ W.A.モーツァルト</li></ul>
-                                </div>
-                            </form>
+                    </div>
+                    <br>
+                    <p>過去のイベント</p>
+                    <p class="eng">Past events</p>
+                    <div class="row">
+                        <div class="archive-event col-sm-4">
+                            <div class="thumbnail">
+                                <img src="image/400x300.jpg" alt="イベント２" width="4000" height="300">
+                                <p><strong>第56回定期合同演奏会</strong></p>
+                                <p class="eng">Sun 6 June 2019</p>
+                                <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">          
-                            <button type="submit" class="btn btn-default btn center-block" data-dismiss="modal">
-                                <span class="glyphicon glyphicon-remove"></span>Go Back
-                            </button>
+                        <div class="archive-event col-sm-4">
+                            <div class="thumbnail">
+                                <img src="image/400x300.jpg" alt="イベント３" width="4000" height="300">
+                                <p><strong>新入生歓迎イベント</strong></p>
+                                <p class="eng">Fri 12 Apr. 2019</p>
+                                <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
+                            </div>
+                        </div>
+                        <div class="archive-event col-sm-4">
+                            <div class="thumbnail">
+                                <img src="image/400x300.jpg" alt="イベント４" width="4000" height="300">
+                                <p><strong>フェアウェル</strong></p>
+                                <p class="eng">Sun 29 Feb. 2019</p>
+                                <button class="btn" data-toggle="modal" data-target="#myModal">detail</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4>Detail</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="psw"><span class="glyphicon glyphicon-music"></span> 第56回定期合同演奏会</label>
+                                    </div>
+                                    <div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item text-left"><span class="label label-danger">日　時</span> 2019年11月30日（土）</li>
+                                            <li class="list-group-item text-left"><span class="label label-danger">場　所</span> あましんアルカイックホール・オクト</li>
+                                            <li class="list-group-item text-left"><span class="label label-danger">一　言</span> 今年最後の発表会です。<br>ぜひ、この機会にお越しください。</li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" id="dialog" onClick="closeDialog()" class="btn btn-default btn center-block" data-dismiss="modal">
+                                    <span class="glyphicon glyphicon-remove"></span>Go Back
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4>Detail</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="psw"><span class="glyphicon glyphicon-music"></span> 第56回定期合同演奏会</label>
+                                    </div>
+                                    <div class="text-left">
+                                        <p>2019年6月16日（日）に関西学生ギター連盟主催の合同演奏会が川西みつなかホールで行われました。 二回生の多くは他大学にゲストとして、三回生は他大学の二回生を受け入れるホストとして、 春から練習を頑張ってきました。</p>
+                                        <br>
+                                        <p><strong>第 Ⅰ 部</strong></p>
+                                        <p>The POP ENSEMBLE</p>
+                                        <ul><li>RPG ／ SEKAI NO OWARI</li></ul>
+                                        <p>阪関四重奏</p>
+                                        <ul><li>情熱大陸 ／ 葉加瀬太郎</li></ul>
+                                        <p>首脳会談（四重奏）</p>
+                                        <ul><li>『HARUMI』Along the Edge ／ Andrew York</li></ul>
+                                        <br>
+                                        <p><strong>第 Ⅱ 部</strong></p>
+                                        <p>実家るてっと</p>
+                                        <ul><li>Tunis Tunisie ／ Roland Dyens</li></ul>
+                                        <p>KC ENSEMBLE</p>
+                                        <ul><li>365日の紙飛行機 ／ AKB48</li></ul>
+                                        <p>関神大合奏</p>
+                                        <ul><li>美しき青きドナウ／ ヨハン・シュトラウスⅡ</li></ul>
+                                        <br>
+                                        <p><strong>第 Ⅲ 部</strong></p>
+                                        <p>三重奏</p>
+                                        <ul><li>La Boda de Luis Alonso -Intermedio- ／Jeronimo Gimenez</li></ul>
+                                        <p>THE TANGO ENSEMBLE</p>
+                                        <ul><li>夜明け／ Robert Firpo</li></ul>
+                                        <p>関大大合奏</p>
+                                        <ul><li>交響曲第40番第一楽章 ／ W.A.モーツァルト</li></ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">          
+                                <button type="submit" class="btn btn-default btn center-block" data-dismiss="modal">
+                                    <span class="glyphicon glyphicon-remove"></span>Go Back
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Container (The Contact Section) -->
-        <div id="contact" class="container text-center bg-0">
-            <h3>Contact</h3>
-            <p><em>We'd like to help.</em></p>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdsgmjHLG6M75OFwc2mMFnAruTbOKIV9C1jfjuuT9UR6EXu3g/formResponse">
-                <div class="row">
-                    <div class="col-4 col-offset-4">
-                        <p>ご質問や演奏依頼などのお問い合わせは</p>
-                        <p>こちらからお願いします。</p>
-                        <br>
-                        <p><span class="glyphicon glyphicon-map-marker"></span>関西学院大学新学生会館3階</p>
-                        <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com (代表)</p>
-                        <br>
-                    </div>
-                    <div class="col-md-6 col-sm-10 col-md-offset-3 col-sm-offset-1">
+            </section>
+            <!-- The Contact Section -->
+            <section id="contact" class="text-center bg-0">
+                <div class="container">
+                    <h3>Contact</h3>
+                    <p><em>We'd like to help.</em></p>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdsgmjHLG6M75OFwc2mMFnAruTbOKIV9C1jfjuuT9UR6EXu3g/formResponse">
                         <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="name" name="entry.2116052852" placeholder="Name ( 例: 田中 太郎 )" type="text" required>
+                            <div class="col-4 col-offset-4">
+                                <p>ご質問や演奏依頼などのお問い合わせは</p>
+                                <p>こちらからお願いします。</p>
+                                <br>
+                                <p><span class="glyphicon glyphicon-map-marker"></span>関西学院大学新学生会館3階</p>
+                                <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com (代表)</p>
+                                <br>
                             </div>
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="email" name="entry.1558582620" placeholder="Email ( 例: example@mail.co.jp )" type="email" required>
+                            <div class="col-md-6 col-sm-10 col-md-offset-3 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" id="name" name="entry.2116052852" placeholder="Name ( 例: 田中 太郎 )" type="text" required>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" id="email" name="entry.1558582620" placeholder="Email ( 例: example@mail.co.jp )" type="email" required>
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="comments" name="entry.1618498056" placeholder="Comment" rows="5" required></textarea>
+                                <br>
+                                <div class="form-group">
+                                    <button class="btn center-block" type="submit">Send</button>
+                                </div>
                             </div>
                         </div>
-                        <textarea class="form-control" id="comments" name="entry.1618498056" placeholder="Comment" rows="5" required></textarea>
-                        <br>
-                        <div class="form-group">
-                            <button class="btn center-block" type="submit">Send</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-
-        <!-- Footer -->
+            </section>
+        </main>
         <footer class="text-center bg-1">
-                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="上へ">
+                <a class="up-arrow" href="#pagetop" data-toggle="tooltip" title="上へ">
                     <span class="glyphicon glyphicon-chevron-up"></span>
                 </a>
                 <br>
-                <span class="fa-stack fa-2x">
-                    <a class="icon" href="https://twitter.com/kwansei_guitar">
-                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                    </a>
-                </span>	
-                <span class="fa-stack fa-2x">
-                    <a class="icon" href="#">
-                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                     </a>
-                </span>
-                <span class="fa-stack fa-2x">
-                    <a class="icon" href="https://www.youtube.com/channel/UClsdlvkdfYln11dIo_wop-w">
-                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                    </a>
-                </span>
-                <p class="eng">Copyright © 2019</p><p>関西学院大学クラシックギタークラブ</p>
+                <ul class="list-sns">
+                    <li class="list-sns__item list-sns__item--twitter">
+                        <span class="fa-stack fa-2x">
+                            <a class="icon" href="https://twitter.com/kwansei_guitar">
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </span>	
+                    </li>
+                    <li class="list-sns__item list-sns__item--facebook">
+                        <span class="fa-stack fa-2x">
+                            <a class="icon" href="#">
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="list-sns__item list-sns__item--youtube">
+                        <span class="fa-stack fa-2x">
+                            <a class="icon" href="https://www.youtube.com/channel/UClsdlvkdfYln11dIo_wop-w">
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+
+                <p><small class="eng">Copyright © 2019</smal></p>
+                <small class="jap">関西学院大学クラシックギタークラブ</smal>
         </footer>
 </div>
 
