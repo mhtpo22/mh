@@ -1,6 +1,6 @@
 /* ----------------------- 全体 ------------------------------------------- */
 body {
-    font: 400 15px/1.8 Hiragino Kaku Gothic ProN, ヒラギノ角ゴ ProN W3;
+    font: 400 15px/1.8 "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
     color: #777;
     letter-spacing: .1em;
     height: 100%;
@@ -312,7 +312,7 @@ textarea {
 
 /* ----------------------- ロード画面 ---------------------------------- */
 #loader {
-    max-width:100%
+    max-width:100%;
     max-height:100%;
     display: none;
     position: fixed;
