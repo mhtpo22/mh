@@ -6,18 +6,45 @@
     <description>Recent content in Posts on 関西学院大学文化総部クラシックギタークラブ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 21 Mar 2018 00:24:10 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 06 Feb 2016 16:15:21 +0900</lastBuildDate>
     
 	<atom:link href="https://mhtpo22.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>こんなゲーム出るよ！！</title>
+      <title>Hello, World！</title>
       <link>https://mhtpo22.github.io/posts/001/</link>
-      <pubDate>Wed, 21 Mar 2018 00:24:10 +0900</pubDate>
+      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
       
       <guid>https://mhtpo22.github.io/posts/001/</guid>
-      <description> こんなゲーム出るよ！！  あんなゲーム こんなゲーム  </description>
+      <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
+    </item>
+    
+    <item>
+      <title>Hello, World！</title>
+      <link>https://mhtpo22.github.io/posts/002/</link>
+      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      
+      <guid>https://mhtpo22.github.io/posts/002/</guid>
+      <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
+    </item>
+    
+    <item>
+      <title>Hello, World！</title>
+      <link>https://mhtpo22.github.io/posts/003/</link>
+      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      
+      <guid>https://mhtpo22.github.io/posts/003/</guid>
+      <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
+    </item>
+    
+    <item>
+      <title>Hello, World！</title>
+      <link>https://mhtpo22.github.io/posts/004/</link>
+      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      
+      <guid>https://mhtpo22.github.io/posts/004/</guid>
+      <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
     </item>
     
   </channel>

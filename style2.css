@@ -1,0 +1,360 @@
+/* ----------------------- 全体 ------------------------------------------- */
+body {
+    font: 400 15px/1.8 "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
+    color: #777;
+    letter-spacing: .1em;
+    height: 100%;
+    text-align: justify;
+    line-height:1.4em;
+    font-feature-settings: "palt";
+}
+
+html {
+	overflow-y:scroll;
+}
+
+p,li,dt,dl {
+	line-height:1.6;
+}
+p {
+	margin:0 0 1em 0;
+}
+li {
+	list-style-type:none;
+}
+ul{
+  list-style:none;   
+}
+
+h3, h4 {
+    margin: 10px 0 40px 0;
+    font-size: 20px;
+    color: #111;
+}
+.h3, h3{
+  font-size: 30px;  
+}
+
+/* ----------------------- 部分 ------------------------------------------- */
+.container {
+    padding: 80px 40px;
+}
+
+/* ----------------------- 背景の設定 ---------------------------------- */
+.bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
+
+.bg-1 h3 {
+    color: #fff;
+}
+
+/* ----------------------- 言語ごとの書式 ---------------------------- */
+.eng{
+    font-style: italic;
+}
+
+.jap{
+    font-style: normal;
+}
+
+/* ----------------------- 円形 ------------------------------------------- */
+.person {
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.check:hover {
+    border: 10px solid transparent;
+    border-color: #f1f1f1;
+}
+
+.sukima p {
+    margin: 0 0 40px;
+}
+
+/* ----------------------- スクリーン ---------------------------------- */
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(10%);
+    /* make all photos black and white */
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+/* ----------------------- トップ画面の設定 ------------------------- */
+.topscreen-phone {
+  position: relative;
+  }
+
+.topscreen-phone a {/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 20px;/*文字サイズ*/
+  border: solid white 2px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  background: rgba(255, 255, 255, 0.4);/*背景を半透明に*/
+  color: white;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.topscreen-phone a:hover{/*カーソルを当てたとき*/
+  background: rgba(255, 255, 255, 0.6);/*背景を半透明に*/
+  }
+
+.topscreen-phone img {
+  width: 100%;
+  animation: haunted 10s ease forwards;
+}
+
+.phone {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+.linkbox {
+        display: none;
+}
+
+@keyframes haunted {
+    0% {
+        filter: brightness(0%);
+    }
+    30% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .carousel {
+        display: none;
+    }
+    .phone {
+        display: block;
+    }
+        .linkbox {
+        display: block;
+    }
+}
+
+/* ----------------------- 設定 ------------------------------------------- */
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    /*border: none;*/
+    /*border-radius: 0;*/
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* ----------------------- ボタンの設定 ------------------------------- */
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+/* ----------------------- モーダルの設定 ---------------------------- */
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+#myModal2{
+    position: fixed;
+}
+
+.modal-content {
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 10px 10px 0px 0px;
+}
+.modal-header, .modal-body{
+    padding: 40px 25px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.modal-footer{
+    border-top:0px;
+}
+
+/* ----------------------- ナビバーの設定 ---------------------------- */
+.nav-tabs li a {
+    color: #777;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 1.3px;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+/* ----------------------- フッターの設定 ---------------------------- */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+/* ----------------------- フォームの設定 ---------------------------- */
+.form-control {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ----------------------- 初期設定 ------------------------------------- */
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* ----------------------- 例外 ------------------------------------------- */
+#name, #email ,#comments {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+/* ----------------------- ロード画面 ---------------------------------- */
+#loader {
+    max-width:100%;
+    max-height:100%;
+    display: none;
+    position: fixed;
+    _position: absolute; /* IE6対策 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+ 
+#fade {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+}
+
+/* ----------------------- END ------------------------------------------- */
+
+ul.list-sns {
+  width: auto;
+  border:none;
+  padding:0;
+  font-size:0px;
+}
+
+ul.list-sns li {
+  width:60px;
+transform: translate(-15%,0%);
+  display: inline-block;
+  text-align: center;
+  font-size:16px;
+}
+
+ul.list-sns li:first-child {
+  height:60px;
+}
+
+ul.list-sns li a {
+  display: block;
+}
