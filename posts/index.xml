@@ -6,33 +6,24 @@
     <description>Recent content in Posts on 関西学院大学文化総部クラシックギタークラブ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 06 Feb 2016 16:15:21 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mhtpo22.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello, World！</title>
-      <link>https://mhtpo22.github.io/posts/001/</link>
-      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      <link>https://mhtpo22.github.io/posts/004/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhtpo22.github.io/posts/001/</guid>
-      <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
-    </item>
-    
-    <item>
-      <title>Hello, World！</title>
-      <link>https://mhtpo22.github.io/posts/002/</link>
-      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
-      
-      <guid>https://mhtpo22.github.io/posts/002/</guid>
+      <guid>https://mhtpo22.github.io/posts/004/</guid>
       <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
     </item>
     
     <item>
       <title>Hello, World！</title>
       <link>https://mhtpo22.github.io/posts/003/</link>
-      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://mhtpo22.github.io/posts/003/</guid>
       <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
@@ -40,11 +31,20 @@
     
     <item>
       <title>Hello, World！</title>
-      <link>https://mhtpo22.github.io/posts/004/</link>
-      <pubDate>Sat, 06 Feb 2016 16:15:21 +0900</pubDate>
+      <link>https://mhtpo22.github.io/posts/002/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhtpo22.github.io/posts/004/</guid>
+      <guid>https://mhtpo22.github.io/posts/002/</guid>
       <description>Hugoでオリジナルブログを作るサンプル記事です。</description>
+    </item>
+    
+    <item>
+      <title>初めての投稿です。</title>
+      <link>https://mhtpo22.github.io/posts/001/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhtpo22.github.io/posts/001/</guid>
+      <description>テストのため</description>
     </item>
     
   </channel>
