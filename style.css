@@ -141,10 +141,35 @@ h3, h4 {
     }
 }
 
+
+@media (min-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+        
+body {
+    font: 400 25px/1.8 "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
+    color: #777;
+    letter-spacing: .1em;
+    height: 100%;
+    text-align: justify;
+    line-height:1.4em;
+    font-feature-settings: "palt";
+}    
+    
+    
+}
+
+
+
 @media (max-width: 600px) {
     .carousel-caption {
         display: none;
     }
+        
+    
+    
+    
 }
 
 @media screen and (max-width: 420px) {
@@ -157,6 +182,7 @@ h3, h4 {
         .linkbox {
         display: block;
     }
+    
 }
 
 /* ----------------------- 設定 ------------------------------------------- */
