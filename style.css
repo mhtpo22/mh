@@ -389,3 +389,17 @@ ul.list-sns li:first-child {
 ul.list-sns li a {
   display: block;
 }
+
+
+.borderSub {
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 3px solid #000;
+    left: 6%;
+    padding: 2px;
+    background-color: #FFF;
+    z-index: 120;
+}
+.borderSub .subInfo {
+    border: 1px solid #000;
+}
