@@ -506,12 +506,27 @@
             </section>
             <section id="tw" class="text-center bg-1">
                 <div class="container">
-                <a class="twitter-timeline" data-lang="ja" data-width="300" data-height="500" href="https://twitter.com/kwansei_guitar?ref_src=twsrc%5Etfw">Tweets by kwansei_guitar</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <div id="tweet-user-timeline"></div>
+                    <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+                    <script>
+                    // コンテナを取得
+                    var container = document.getElementById( "tweet-user-timeline" ) ;
+                    // ユーザータイムラインを埋め込み表示するメソッドを実行
+                    twttr.widgets.createTimeline (
+	                    {	// 第1引数: ウィジェットの種類
+	                	    sourceType: "profile" ,
+	                	    screenName: "kwansei_guitar" ,	// スクリーンネーム
+	                    } ,
+	                    container ,	// 第2引数: コンテナの要素
+	                    {	// 第3引数: パラメータ
+	                	    width: 300 ,	// 横幅
+	                	    height: 520 
+	                    }
+                    ) ;
+                    </script>
                 </div>
-                </section>
+            </section>
         </main>
-
-
         <footer class="text-center bg-0">
                 <a class="up-arrow" href="#pagetop" data-toggle="tooltip" title="上へ">
                     <span class="glyphicon glyphicon-chevron-up"></span>

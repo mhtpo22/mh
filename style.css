@@ -403,3 +403,10 @@ ul.list-sns li a {
 .borderSub .subInfo {
     border: 1px solid #000;
 }
+
+        h2.timeline-Header-title {
+    font-size: 1px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #292F33;
+}
