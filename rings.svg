@@ -1,0 +1,21 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="200" height="200"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="circlePath" transform="translate(20,20)"
+        d="M 50 0
+           C 75 0  100 25 100 50
+           C 100 75 75 100 50 100
+           C 25 100 0 75 0 50
+           C 0 25 25 0 50 0
+           z" />
+</defs>
+<g fill="#009900" font-size="15">
+  <text x="10" y="10" >
+    <textPath xlink:href="#circlePath">関 西学院大学クラシックギタークラブ</textPath>
+  </text>
+</g>
+<use xlink:href="#circlePath" fill="none" stroke="red" />
+</svg>
