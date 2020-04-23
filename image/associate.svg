@@ -2,7 +2,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 300 300">
 
-	<g transform="translate(0,300) scale(0.05,-0.05)" fill="#ffffff" stroke="none">
+	<g transform="translate(0,300) scale(0.05,-0.05)" fill="black" stroke="none">
 
 <path d="M4187 5794 c-69 -81 -190 -238 -523 -684 -140 -187 -351 -467 -470
 -623 l-216 -283 -244 -9 c-902 -32 -1481 -864 -1194 -1715 l42 -124 -305 -403
