@@ -334,6 +334,11 @@ textarea {
     z-index: 50;
 }
 
+#kansai{
+  width: 100%;
+}
+img#kansai {background-color: #f8dce0; margin: 5px;}
+
 /* ----------------------- END ------------------------------------------- */
 
 ul.list-sns {
