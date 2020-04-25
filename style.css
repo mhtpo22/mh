@@ -301,12 +301,12 @@ body {
 /* ----------------------- フッターの設定 ---------------------------- */
 footer {
     background-color: #2d2d30;
-    color: #f5f5f5;
+    color: #777;
     padding: 32px;
 }
 
 footer a {
-    color: #f5f5f5;
+    color: #777;
 }
 
 footer a:hover {
