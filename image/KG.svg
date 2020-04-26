@@ -3,7 +3,7 @@
 <style>
   .reload .arrow{
     transform-origin:320px 320px;
-    animation: reload-roll 0.9s linear infinite;
+    animation: reload-roll 1.0s linear infinite;
   }
   @keyframes reload-roll {
       0% {transform:rotate(0deg);}
