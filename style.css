@@ -414,3 +414,53 @@ ul.list-sns li a {
     line-height: 24px;
     color: #292F33;
 }
+/*
+.dot-0{
+  height: 100%;
+  background-size: 5px 5px;
+  margin: 0 auto;
+  background-image: radial-gradient(rgba(128,128,128, 0.5) 1%, rgba(255, 44, 171, 0) 20%);
+}
+.dot-1{
+  height: 100%;
+  background-size: 5px 5px;
+  margin: 0 auto;
+  background-image: radial-gradient(rgba(256,256,256, 0.5) 1%, rgba(255, 44, 171, 0) 20%);
+}
+*/
+
+.thumbnail {
+    top: 1.2vw;
+    left: 1.2vw;
+    border-radius: 3.2vw;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+.thumbnail {
+    top: 9px;
+    left: 9px;
+    content: '';
+    border-radius: 10px;
+    background: url(image/dot.svg)  repeat right bottom;
+    background-size: 12px 12px;
+}
+
+img{
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.thumbnail{
+    padding-right: 8px;
+    padding-bottom: 8px;
+    border: 0px none;
+}
+
+.article{
+    background: White;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.thumbnail p{
+    margin-top: 0px;
+}
