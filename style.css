@@ -437,15 +437,15 @@ ul.list-sns li a {
 }
 
 .thumbnail {
-    top: 9px;
-    left: 9px;
+    top: 8px;
+    left: 8px;
     content: '';
     border-radius: 10px;
     background: url(image/dot.svg)  repeat right bottom;
     background-size: 12px 12px;
 }
 
-img{
+.thumbnail img{
     border-radius: 10px 10px 0px 0px ;
 }
 
