@@ -250,6 +250,45 @@
   background-image: radial-gradient(rgba(256,256,256, 0.5) 1%, rgba(255, 44, 171, 0) 20%);
 }
 
+.thumbnail {
+    top: 1.2vw;
+    left: 1.2vw;
+    border-radius: 3.2vw;
+    border-radius: 0px 0px 10px 10px ;
+}
+.thumbnail {
+
+
+    top: 9px;
+    left: 9px;
+
+    content: '';
+    border-radius: 10px;
+    background: url(image/dot.svg)  repeat right bottom;
+    background-size: 12px 12px;
+}
+
+img{
+border-radius: 10px 10px 0px 0px ;
+}
+
+.thumbnail{
+
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 0px none;
+}
+
+.article{
+background: White;
+margin: 0 0 0 0;
+border-radius: 0px 0px 10px 10px;
+
+}
+
+.thumbnail p{
+margin-top: 0px;
+}
 </style>
 
             
@@ -263,13 +302,15 @@
                     <p>開催予定のイベント</p>
                          
                     <!--<p class="eng">Scheduled Events</p>-->
-                    <div class="row">
+                    <div class="row row-archive">
                         <div class="archive-event col-md-6 col-md-offset-3">
                             <div class="thumbnail">
                                 <img src="image/400x300.jpg" alt="" width="4000" height="300">
-                                <p><strong>第59回定期演奏会</strong></p>
-                                <p class="eng">Sat 30 Nov. 2019</p>
-                                <button class="btn" id="show" onClick="showDialog()" data-toggle="modal" data-target="#myModal1">detail</button>
+                                <div class="article">
+                                    <p><strong>第59回定期演奏会</strong></p>
+                                    <p class="eng">Sat 30 Nov. 2019</p>
+                                    <button class="btn" id="show" onClick="showDialog()" data-toggle="modal" data-target="#myModal1">detail</button>
+                                </div>
                             </div>
                         </div>
                     </div>
