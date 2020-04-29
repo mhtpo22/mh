@@ -442,7 +442,7 @@ ul.list-sns li a {
     content: '';
     border-radius: 10px;
     background: url(image/dot.svg)  repeat right bottom;
-    background-size: 12px 12px;
+    background-size: 8px 8px;
 }
 
 .thumbnail img{
@@ -450,8 +450,8 @@ ul.list-sns li a {
 }
 
 .thumbnail{
-    padding-right: 8px;
-    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     border: 0px none;
 }
 
