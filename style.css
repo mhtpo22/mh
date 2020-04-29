@@ -429,6 +429,7 @@ ul.list-sns li a {
 }
 */
 
+/* ----------------------- サムネイル ---------------------------------- */
 .thumbnail {
     top: 1.2vw;
     left: 1.2vw;
@@ -463,4 +464,54 @@ ul.list-sns li a {
 
 .thumbnail p{
     margin-top: 0px;
+}
+
+/* ----------------------- ツイッター ---------------------------------- */
+.official-twitter__cover img{
+    border-radius: 3.2vw;
+}
+
+.official-twitter__header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.official-twitter__thumb {
+    width: 25vw;
+    border-radius: 100%;
+    margin-right: 2.66667
+    vw;
+}
+
+.official-twitter__data {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.official-twitter__name{
+    font-size: 110%;
+    color: black !important;
+    margin: 0px 0px 0px 0px;
+}
+
+.official-twitter__column{
+    padding: 8.373px 8.373px 4px 8.373px;
+    border-top-left-radius: 3.2vw;
+    border-top-right-radius: 3.2vw;
+    border-bottom-left-radius: 0;
+    background: #fff;
+}
+
+.official-twitter__column--timeline{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3.2vw;
+    border-bottom-right-radius: 3.2vw;
+    background: #e9eef2;
 }
