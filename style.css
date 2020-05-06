@@ -515,3 +515,8 @@ ul.list-sns li a {
     border-bottom-right-radius: 3.2vw;
     background: #e9eef2;
 }
+
+.link-name:hover,
+.link-name:focus {
+  filter: invert(27%) sepia(21%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
