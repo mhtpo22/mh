@@ -516,6 +516,7 @@ ul.list-sns li a {
     background: #e9eef2;
 }
 
+/* ----------------------- リンク名 ---------------------------------- */
 .link-name:hover,
 .link-name:focus {
   filter: invert(27%) sepia(21%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
